@@ -3,8 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 
 import { Home } from "./pages/home";
-import { SignUp } from "./pages/signUp";
-import { LogIn } from "./pages/logIn";
+import { Auth } from "./pages/auth";
 
 // 1rem = 16pixel i.e making html font-size 65.5% makes 1rem = 10pixel (just for easy calculation)
 const GlobalStyle = createGlobalStyle`
@@ -31,8 +30,7 @@ const App = () => {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/login" component={LogIn} />
-          <Route exact path="/signup" component={SignUp} />
+          <Route exact path="/auth" component={Auth} />
         </Switch>
       </BrowserRouter>
     </>
