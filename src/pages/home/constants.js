@@ -1,3 +1,3 @@
 export const strings = {
-    Home_Page_Text: 'This is the home page',
-}
+    Home_Page_Text: "This is the home page",
+};
