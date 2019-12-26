@@ -8,7 +8,6 @@ export const SignUpWrapper = styled.div`
 
 export const SignUpForm = styled.form`
   width: 280px;
-  height: 400px;
   padding: 30px;
   border-radius: 20px;
   box-shadow: 18px 18px 25px #00000040;
@@ -33,19 +32,26 @@ export const SignUpForm = styled.form`
   }
 
   p{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 10px;
     color: #E6E6E6;
     opacity: 0.5;
+    text-align: center;
   }
 
-  div{
-    margin-bottom: 20px;
+  .social-media{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    i{
+      color: #ffffff;
+      font-size: 20px;
+    }
   }
 
   .privacy{
-    margin: 0 auto 20px;
-    text-align: center;
+    margin: 0 auto 30px;
 
     a{
       text-decoration: underline;
@@ -56,6 +62,7 @@ export const SignUpForm = styled.form`
     color: #FFDD03;
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
   }
 `;
 
