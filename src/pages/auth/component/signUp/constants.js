@@ -1,3 +1,14 @@
-export const strings = {
-  SignIn_Page_Text: "This is the Sign In page"
-};
+export const input_fields = [
+  {
+    placeholder: 'NAME',
+    type: 'text',
+  },
+  {
+    placeholder: 'EMAIL ADDRESS',
+    type: 'email',
+  },
+  {
+    placeholder: 'PASSWORD',
+    type: 'password',
+  }
+]
