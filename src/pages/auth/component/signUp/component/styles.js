@@ -67,11 +67,12 @@ export const SignUpForm = styled.form`
 `;
 
 export const SignUpButton = styled.button`
-border: none;
+  border: none;
   border-radius: 20px;
   box-shadow: 18px 18px 25px #00000040;
   color: #FFDD03;
   width: 280px;
   height: 80px;
   background-color: transparent;
+  outline: none !important;
 `;
