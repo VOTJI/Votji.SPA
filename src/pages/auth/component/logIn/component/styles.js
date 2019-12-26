@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const LogInWrapper = styled.div`
   position: absolute;
   top: 82px;
-  left: 576px;
+  left: 610px;
 `
 
 export const LogInForm = styled.form`
