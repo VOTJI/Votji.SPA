@@ -8,7 +8,7 @@ export const LogInWrapper = styled.div`
 
 export const LogInForm = styled.form`
   width: 280px;
-  height: 400px;
+  height: 308px;
   padding: 30px;
   border-radius: 20px;
   box-shadow: 18px 18px 25px #00000040;

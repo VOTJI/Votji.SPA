@@ -12,17 +12,12 @@ export const LogIn = () => {
           const { placeholder, type } = input
           return <input type={type} placeholder={placeholder} key={placeholder} />
         })}
-        <p>Sign up with these platforms to get quick access</p>
-        <div>
-          <a href="">facebook</a>
-          <a href="">twitter</a>
-          <a href="">google</a>
-        </div>
-        <p>By signing up i agree with the <a>privacy policy</a> and <a>terms of service</a></p>
+        <a href="">Forgot Password?</a>
+        <p>Don't have an account? <a>Create Account</a></p>
         <a href="">Already have an account?</a>
       </LogInForm>
       <LogInButton>
-        Create account
+        Login
     </LogInButton>
     </LogInWrapper>
   )
