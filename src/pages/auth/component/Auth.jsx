@@ -8,7 +8,7 @@ import { About } from "./about";
 const AuthWrapper = styled.div`
 
    
-`
+`;
 
 const { Home_Page_Text } = strings;
 

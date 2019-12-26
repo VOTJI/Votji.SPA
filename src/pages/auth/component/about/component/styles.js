@@ -18,11 +18,15 @@ export const AboutWrapper = styled.div`
   .header{
     color: #FFDD03;
     margin-bottom: 70px;
+    font-family: Lucida Bright;
+    font-size: 34px;
+    font-weight: 450;
   }
 
   .details{
     color: #FFDD03;
-    opacity: 0.4;
+    opacity: 0.2;
+    font-size: 18px;
 
   }
 `

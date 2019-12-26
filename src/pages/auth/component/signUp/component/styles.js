@@ -4,7 +4,7 @@ export const SignUpWrapper = styled.div`
   position: absolute;
   top: 82px;
   left: 245px;
-`
+`;
 
 export const SignUpForm = styled.form`
   width: 280px;
@@ -25,6 +25,7 @@ export const SignUpForm = styled.form`
     color: #FFDD03;
     outline: none !important;
     opacity: 0.2;
+    font-size: 12px;
 
     ::placeholder{
       color: #FFDD03 !important;
@@ -33,12 +34,30 @@ export const SignUpForm = styled.form`
 
   p{
     margin-bottom: 20px;
+    font-size: 10px;
+    color: #E6E6E6;
+    opacity: 0.5;
   }
 
   div{
     margin-bottom: 20px;
   }
-`
+
+  .privacy{
+    margin: 0 auto 20px;
+    text-align: center;
+
+    a{
+      text-decoration: underline;
+    }
+  }
+
+  >a{
+    color: #FFDD03;
+    display: flex;
+    justify-content: center;
+  }
+`;
 
 export const SignUpButton = styled.button`
 border: none;
@@ -48,4 +67,4 @@ border: none;
   width: 280px;
   height: 80px;
   background-color: transparent;
-`
+`;
