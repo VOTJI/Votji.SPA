@@ -18,8 +18,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body{
-    font-family: sans-serif;
+    font-family: open-sans;
     font-size: 1.4rem;
+    background-color: #0F0F0F;
   }
 `;
 
