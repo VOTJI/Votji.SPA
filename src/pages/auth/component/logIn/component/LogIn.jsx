@@ -1,8 +1,8 @@
 import React from "react";
-import { input_fields } from "../constants";
+import { input_fields, strings } from "../constants";
 import { LogInWrapper, LogInForm, LogInButton } from "./styles";
 
-
+const { text1, text2, text3, text4 } = strings;
 
 export const LogIn = () => {
   return (
@@ -12,12 +12,12 @@ export const LogIn = () => {
           const { placeholder, type } = input;
           return <input type={type} placeholder={placeholder} key={placeholder} />;
         })}
-        <a href="">Forgot Password?</a>
-        <p>Don't have an account? <a> Create Account</a></p>
+        <a href="">{text1}</a>
+        <p>{text2} <a> {text3}</a></p>
       </LogInForm>
       <LogInButton>
-        Login
-    </LogInButton>
+        {text4}
+      </LogInButton>
     </LogInWrapper>
   );
 };

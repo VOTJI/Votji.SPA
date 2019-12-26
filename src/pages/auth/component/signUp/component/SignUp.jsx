@@ -1,8 +1,8 @@
 import React from "react";
-import { input_fields } from "../constants";
+import { input_fields, strings } from "../constants";
 import { SignUpWrapper, SignUpForm, SignUpButton } from "./styles";
 
-
+const { text1, text2, text3, text4, text5, text6, text7 } = strings;
 
 export const SignUp = () => {
   return (
@@ -12,18 +12,18 @@ export const SignUp = () => {
           const { placeholder, type } = input;
           return <input type={type} placeholder={placeholder} key={placeholder} />;
         })}
-        <p>Sign up with these platforms to get quick access</p>
+        <p>{text1}</p>
         <div className="social-media">
           <a href=""><i className="fab fa-facebook-f"></i></a>
           <a href=""><i className="fab fa-twitter"></i></a>
           <a href=""><i className="fab fa-google"></i></a>
         </div>
-        <p className="privacy">By signing up i agree with the <br /><a>privacy policy</a> and <a>terms of service</a></p>
-        <a href="" >Already have an account?</a>
+        <p className="privacy">{text2} <br /><a>{text3} </a>{text4}<a> {text5}</a></p>
+        <a href="" >{text6}</a>
       </SignUpForm>
       <SignUpButton form="signUp-form">
-        Create account
-    </SignUpButton>
+        {text7}
+      </SignUpButton>
     </SignUpWrapper>
   );
 };
