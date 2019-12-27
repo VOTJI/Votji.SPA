@@ -4,13 +4,16 @@ export const LogInWrapper = styled.div`
   position: absolute;
   top: 82px;
   left: 660px;
+  transition: left 1s;
+
+  ${({ isLogin }) => isLogin && `left: 300px`}
 `;
 
 export const LogInForm = styled.form`
   width: 280px;
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 18px 18px 25px #00000040;
+  box-shadow: 18px 18px 25px #00000040,  -18px -18px 40px -6px #38383840;
   margin-bottom: 40px;
 
   input{
@@ -56,7 +59,7 @@ export const LogInForm = styled.form`
 export const LogInButton = styled.button`
   border: none;
   border-radius: 20px;
-  box-shadow: 18px 18px 25px #00000040;
+  box-shadow: 18px 18px 25px #00000040,  -18px -18px 40px -6px #38383840;
   color: #FFDD03;
   width: 280px;
   height: 80px;

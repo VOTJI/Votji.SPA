@@ -4,9 +4,11 @@ import { LogInWrapper, LogInForm, LogInButton } from "./styles";
 
 const { text1, text2, text3, text4 } = strings;
 
-export const LogIn = ({ handleSetIsLogin }) => {
+export const LogIn = ({ handleSetIsLogin, isLogin }) => {
   return (
-    <LogInWrapper onClick={handleSetIsLogin}>
+    <LogInWrapper
+      onClick={handleSetIsLogin}
+      isLogin={isLogin} >
       <LogInForm>
         {input_fields.map(input => {
           const { placeholder, type } = input;

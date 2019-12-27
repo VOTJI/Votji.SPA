@@ -22,9 +22,11 @@ export const Auth = () => {
 
     return (
         <AuthWrapper>
-            <SignUp />
+            <SignUp
+                isLogin={isLogin} />
             <LogIn
-                handleSetIsLogin={handleSetIsLogin} />
+                handleSetIsLogin={handleSetIsLogin}
+                isLogin={isLogin} />
             <About />
             {Home_Page_Text}
         </AuthWrapper>

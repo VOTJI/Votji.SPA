@@ -4,9 +4,9 @@ import { SignUpWrapper, SignUpForm, SignUpButton } from "./styles";
 
 const { text1, text2, text3, text4, text5, text6, text7 } = strings;
 
-export const SignUp = () => {
+export const SignUp = ({ isLogin }) => {
   return (
-    <SignUpWrapper>
+    <SignUpWrapper isLogin={isLogin}>
       <SignUpForm id="signUp-form">
         {input_fields.map(input => {
           const { placeholder, type } = input;

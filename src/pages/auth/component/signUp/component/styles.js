@@ -4,13 +4,16 @@ export const SignUpWrapper = styled.div`
   position: absolute;
   top: 82px;
   left: 300px;
+  transition: left 1s;
+
+  ${({ isLogin }) => isLogin && `left: -120px`}
 `;
 
 export const SignUpForm = styled.form`
   width: 280px;
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 18px 18px 25px #00000040;
+  box-shadow: 18px 18px 25px #00000040,  -18px -18px 40px -6px #38383840;
   margin-bottom: 40px;
 
   input{
@@ -69,7 +72,7 @@ export const SignUpForm = styled.form`
 export const SignUpButton = styled.button`
   border: none;
   border-radius: 20px;
-  box-shadow: 18px 18px 25px #00000040;
+  box-shadow: 18px 18px 25px #00000040,  -18px -18px 40px -6px #38383840;
   color: #FFDD03;
   width: 280px;
   height: 80px;
