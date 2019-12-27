@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SignUpWrapper = styled.div`
   position: absolute;
   top: 82px;
-  left: 245px;
+  left: 300px;
 `;
 
 export const SignUpForm = styled.form`

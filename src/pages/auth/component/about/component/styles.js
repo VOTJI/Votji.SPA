@@ -6,7 +6,7 @@ export const AboutWrapper = styled.div`
   top: 0;
   right: 0;
   height: 100vh;
-  width: 510px;
+  width: 600px;
   padding: 50px;
   background-color: #000000;
   z-index: 1;
