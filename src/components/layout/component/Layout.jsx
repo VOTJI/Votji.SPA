@@ -1,32 +1,32 @@
 //packages
-import React, { Fragment, Children } from "react";
+import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
 //files
 import { Header } from "./Header";
-import { SideBar } from "./Sidebar";
+import { SideBar } from "./SideBar";
 import { Footer } from "./Footer";
 
 const Wrapper = styled.div`
-
+    padding: 40px;
 `;
 
 const Content = styled.div`
-    
+
 `;
 
 
 
 
-const Layout = ({ isFooterPresent }) => {
+export const Layout = ({ isFooterPresent, children }) => {
     return (
         <Fragment>
             <Wrapper>
                 <Header />
                 <SideBar />
                 <Content>
-                    {Children}
+                    {children}
                 </Content>
             </Wrapper>
             {isFooterPresent && <Footer />}
@@ -36,11 +36,10 @@ const Layout = ({ isFooterPresent }) => {
 
 Layout.propTypes = {
     isFooterPresent: PropTypes.bool,
+    children: PropTypes.node.isRequired,
 };
 
 Layout.defaultProps = {
     isFooterPresent: true,
 };
 
-
-export default Layout;

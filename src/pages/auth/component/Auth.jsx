@@ -10,15 +10,13 @@ const AuthWrapper = styled.div`
    
 `;
 
-const { Home_Page_Text } = strings;
 
 export const Auth = () => {
 
-    const [isLogin, setIsLogin] = useState(false)
+    const [isLogin, setIsLogin] = useState(false);
     const handleSetIsLogin = () => {
-        setIsLogin(!isLogin)
-    }
-    console.log(isLogin)
+        setIsLogin(!isLogin);
+    };
 
     return (
         <AuthWrapper>
@@ -28,7 +26,6 @@ export const Auth = () => {
                 handleSetIsLogin={handleSetIsLogin}
                 isLogin={isLogin} />
             <About />
-            {Home_Page_Text}
         </AuthWrapper>
     );
 };
