@@ -9,7 +9,7 @@ import { SideBar } from "./SideBar";
 import { Footer } from "./Footer";
 
 const Wrapper = styled.div`
-    padding: 40px;
+    padding: 20px 30px;
 `;
 
 const Content = styled.div`
