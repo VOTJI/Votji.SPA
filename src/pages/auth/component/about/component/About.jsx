@@ -21,5 +21,5 @@ export const About = () => {
         their most important projects.
         </p>
     </AboutWrapper>
-  )
+  );
 };
